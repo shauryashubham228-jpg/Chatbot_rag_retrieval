@@ -235,9 +235,9 @@ The condense step rephrases follow-up questions ("and for that item?") into self
 > *Evaluation on Dataset 
 (<img width="899" height="355" alt="image" src="https://github.com/user-attachments/assets/c4175b3f-30de-4165-89a9-95230de6f04c" />
 chatbot ui
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e52bc267-5570-484e-b079-01c7bfbe3bb1" />
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/e52bc267-5570-484e-b079-01c7bfbe3bb1" />
 prompts
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/74f23101-eca0-49a5-b740-a6bf35c74905" />
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/74f23101-eca0-49a5-b740-a6bf35c74905" />
 
 
 )*
