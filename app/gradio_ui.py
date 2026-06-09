@@ -51,9 +51,24 @@ def chat_fn(user_msg: str, history: list, session_id: str):
     return "", history, session_id
 
 
+GREETING = (
+    "Hi there! 👋 I'm **Lara**, your Lagorii Kids support assistant. "
+    "I can help you with **returns & refunds, order cancellations, shipping & delivery, "
+    "and general order support**.\n\n"
+    "Just so I guide you correctly — let me know whether your order has **already been "
+    "delivered** (that's a *return/refund*) or **hasn't arrived yet** (that's a "
+    "*cancellation*), since the charges and conditions differ. How can I help you today? 😊"
+)
+
+
+def greet():
+    """Initial assistant message shown when the chat loads or resets."""
+    return [{"role": "assistant", "content": GREETING}]
+
+
 def reset_fn(session_id: str):
     reset_session(session_id)
-    return [], str(uuid.uuid4())
+    return greet(), str(uuid.uuid4())
 
 
 def build_demo() -> gr.Blocks:
@@ -61,7 +76,7 @@ def build_demo() -> gr.Blocks:
         session_id = gr.State(str(uuid.uuid4()))
 
         gr.HTML(HEADER)
-        chatbot = gr.Chatbot(height=460)
+        chatbot = gr.Chatbot(height=460, value=greet())
         with gr.Row():
             msg  = gr.Textbox(
                 placeholder="Ask about returns, shipping, refunds...",
