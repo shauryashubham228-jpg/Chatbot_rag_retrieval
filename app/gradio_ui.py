@@ -56,16 +56,12 @@ def reset_fn(session_id: str):
 
 
 def build_demo() -> gr.Blocks:
-    with gr.Blocks(
-        theme=gr.themes.Soft(primary_hue="pink", secondary_hue="purple"),
-        title="Lagorii Kids — Lara",
-    ) as demo:
+    with gr.Blocks(title="Lagorii Kids — Lara") as demo:
         session_id = gr.State(str(uuid.uuid4()))
 
         gr.HTML(HEADER)
         chatbot = gr.Chatbot(
             height=460,
-            bubble_full_width=False,
             show_copy_button=True,
             avatar_images=(
                 None,
