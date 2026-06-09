@@ -60,14 +60,7 @@ def build_demo() -> gr.Blocks:
         session_id = gr.State(str(uuid.uuid4()))
 
         gr.HTML(HEADER)
-        chatbot = gr.Chatbot(
-            height=460,
-            show_copy_button=True,
-            avatar_images=(
-                None,
-                "https://img.icons8.com/color/48/customer-support.png",
-            ),
-        )
+        chatbot = gr.Chatbot(height=460)
         with gr.Row():
             msg  = gr.Textbox(
                 placeholder="Ask about returns, shipping, refunds...",
