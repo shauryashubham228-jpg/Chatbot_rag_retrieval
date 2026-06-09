@@ -32,8 +32,9 @@ For products Rs.5000 or more: deduction of Rs.249 per item.
 Processed within 5 to 7 business days after QC approval.
 
 ### Refund — Cash on Delivery (COD) Orders
-COD refunds are issued only as Lagorii Wallet store credits.
-No bank or UPI refunds for COD orders.
+The Rs.100 COD charge is an upfront handling fee and is non-refundable under any circumstances.
+COD order refunds are issued ONLY as Lagorii Wallet store credits.
+No bank or UPI refunds are ever given for COD orders.
 
 ### Refund — Gift Card Orders
 Orders paid using a gift card are not eligible for refunds to the original payment method.
