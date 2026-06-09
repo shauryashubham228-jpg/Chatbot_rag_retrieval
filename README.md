@@ -233,6 +233,12 @@ The condense step rephrases follow-up questions ("and for that item?") into self
 ## 📸 Screenshots
 <img width="899" height="355" alt="image" src="https://github.com/user-attachments/assets/c4175b3f-30de-4165-89a9-95230de6f04c" />
 
+<img width="902" height="364" alt="image" src="https://github.com/user-attachments/assets/c5a1e600-1a8f-4512-afa6-d75c6fb27a08" />
+
+<img width="1032" height="451" alt="image" src="https://github.com/user-attachments/assets/43da57e0-68e6-4a96-9165-e3a1b3d83f59" />
+
+
+
 
 
 
