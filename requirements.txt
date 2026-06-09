@@ -1,0 +1,16 @@
+langchain==1.3.4
+langchain-core==1.4.2
+langchain-classic==1.0.7
+langchain-google-genai==4.2.4
+langchain-text-splitters==1.1.2
+langchain-community
+langchain-groq
+faiss-cpu
+langsmith==0.8.11
+gradio==6.17.3
+fastapi
+uvicorn[standard]
+sentence-transformers
+tiktoken
+pandas
+pydantic-settings
