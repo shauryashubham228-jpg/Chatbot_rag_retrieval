@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import time
+
 from langsmith import traceable
 
 from app.chains import build_chains
@@ -24,6 +26,11 @@ def run_agent(user_message: str, session_id: str = "default") -> dict:
         return {"answer": "Please type your question! 😊", "intent": "empty", "session_id": session_id}
 
     intent_str   = _traced_classify(user_message)
+
+    # Space out Groq calls to avoid free-tier burst (429) limits that
+    # otherwise degrade or drop the generation step.
+    time.sleep(2)
+
     intent       = Intent(intent_str)
     chat_history = get_lc_history(session_id)
 
