@@ -7,7 +7,7 @@ langchain-community
 langchain-groq
 faiss-cpu
 langsmith==0.8.11
-gradio==6.17.3
+gradio==4.44.0
 fastapi
 uvicorn[standard]
 sentence-transformers
