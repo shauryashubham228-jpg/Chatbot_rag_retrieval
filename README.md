@@ -6,7 +6,7 @@
 
 ## 🔗 Live Demo
 
-**[→ Try Lara on Railway](https://your-railway-url.railway.app)**
+**[→ Try Lara on Railway](https://chatbotragretrieval-production.up.railway.app/)**
 
 ---
 
@@ -122,7 +122,7 @@ chatbot/
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/your-username/lagorii-chatbot.git
+git clone https://github.com/shauryashubham228-jpg/lagorii-chatbot.git
 cd lagorii-chatbot
 pip install -r requirements.txt
 ```
@@ -238,11 +238,8 @@ The condense step rephrases follow-up questions ("and for that item?") into self
 
 ## 👤 Author
 
-Built by **[Your Name]**
-[LinkedIn](https://linkedin.com/in/your-profile) · [GitHub](https://github.com/your-username)
+Built by **[Shaurya Shubham]**
+[LinkedIn](https://www.linkedin.com/in/shaurya-shubham-088a91215/) · [GitHub](https://github.com/shauryashubham228-jpg)
 
 ---
 
-## 📄 License
-
-MIT
