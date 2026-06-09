@@ -41,7 +41,7 @@ Reply with ONLY the label. No explanation. No punctuation."""),
 
 def build_router_chain():
     llm = ChatGroq(
-        model="llama-3.1-8b-instant",
+        model="llama-3.3-70b-versatile",
         temperature=0.0,
         groq_api_key=settings.groq_api_key,
     )
