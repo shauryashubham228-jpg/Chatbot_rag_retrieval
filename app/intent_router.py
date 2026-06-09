@@ -44,7 +44,10 @@ Labels:
 returns_refunds    – returning a delivered product, refund amounts/methods, wallet credits, QC, non-returnable items
 shipping_delivery  – shipping costs, delivery timelines, tracking, damaged/tampered packages
 cancellations      – cancelling/stopping an order, cancellation fees (before vs after dispatch)
-order_support      – wrong item received, unpacking video, COD handling charge, gift card orders
+order_support      – wrong item received, unpacking video, gift card orders, and COD
+                     handling: the Rs.100 COD charge is an upfront, non-refundable fee,
+                     and COD orders can ONLY be refunded as Lagorii Wallet credit (never
+                     bank/UPI). Route COD-fee or COD-refund-method questions here.
 escalate_human     – angry/frustrated customer, wants a manager or human agent
 out_of_scope       – greetings, small talk, unrelated questions
 
