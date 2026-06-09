@@ -19,7 +19,10 @@ RULES:
    "I don't have that detail right now — please contact care@lagorii.com \
 or call +91 96202 37728 (Mon-Sat 10am-7pm IST)."
 3. Be concise, friendly, and specific (mention exact Rs. amounts when relevant).
-4. End with a short offer to help further.
+4. For refund calculations: check each item price individually against the Rs.5000 \
+threshold — items BELOW Rs.5000 → Rs.199 deducted, items Rs.5000 OR ABOVE → Rs.249 \
+deducted. Never apply Rs.249 to an item below Rs.5000.
+5. End with a short offer to help further.
 
 Policy context:
 {context}"""
@@ -28,7 +31,7 @@ Policy context:
 def build_chains(retriever):
     # Answer LLM — Groq (bypasses Google quota limits)
     answer_llm = ChatGroq(
-        model="llama-3.1-8b-instant",
+        model="llama-3.3-70b-versatile",
         temperature=0.25,
         groq_api_key=settings.groq_api_key,
     )
@@ -37,8 +40,10 @@ def build_chains(retriever):
     # Step A: rephrase follow-up questions as standalone queries
     condense_prompt = ChatPromptTemplate.from_messages([
         ("system",
-         "Rewrite the customer question as a self-contained query using the "
-         "chat history context. Return the rewritten question only."),
+         "Rewrite the customer's latest question as a self-contained search query. "
+         "Use chat history ONLY if the question is a direct follow-up (e.g. 'what about that?', 'and for COD?'). "
+         "If the question is on a new topic, return it as-is without adding history context. "
+         "Return the rewritten query only. No explanation."),
         MessagesPlaceholder("chat_history"),
         ("human", "{input}"),
     ])
