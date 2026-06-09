@@ -61,7 +61,7 @@ def build_demo() -> gr.Blocks:
         session_id = gr.State(str(uuid.uuid4()))
 
         gr.HTML(HEADER)
-        chatbot = gr.Chatbot(height=460, type="messages")
+        chatbot = gr.Chatbot(height=460)
         with gr.Row():
             msg  = gr.Textbox(
                 placeholder="Ask about returns, shipping, refunds...",
