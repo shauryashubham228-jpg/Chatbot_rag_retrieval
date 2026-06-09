@@ -6,8 +6,8 @@ langchain-text-splitters==1.1.2
 langchain-community
 langchain-groq
 faiss-cpu
-langsmith<0.2.0
-gradio==4.44.0
+langsmith
+gradio==5.9.1
 fastapi
 uvicorn[standard]
 sentence-transformers
