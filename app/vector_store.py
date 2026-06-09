@@ -45,4 +45,4 @@ def build_retriever():
         vs = FAISS.from_documents(docs, embeddings)
         vs.save_local(str(FAISS_PATH))
 
-    return vs.as_retriever(search_kwargs={"k": 5})
+    return vs.as_retriever(search_kwargs={"k": 4})
