@@ -20,33 +20,43 @@ Use the Initiate Returns link on the website.
 For international orders, email care@lagorii.com within 7 days of delivery
 with your order number and the item(s) you wish to return.
 
+### Eligible Refund Modes by Payment Type
+
+COD (Cash on Delivery) orders:
+Refund is available ONLY as Lagorii Wallet store credits. Bank account or UPI refunds are NOT available for COD orders under any circumstances.
+
+Prepaid orders (full payment made online at checkout):
+Refund is available either as Lagorii Wallet store credits OR Bank Account/UPI — customer can choose.
+
 ### Refund — Lagorii Wallet (Store Credits)
-Deduction is Rs.99 per item.
+Available for both COD and prepaid orders.
+Deduction is Rs.99 per item as return shipping and handling fee.
 Credits are added within 48 hours after QC approval.
 Credits are non-expiring but cannot be encashed or transferred.
 This is the fastest refund method.
 
 ### Refund — Bank Account or UPI
-For products under Rs.5000: deduction of Rs.199 per item.
-For products Rs.5000 or more: deduction of Rs.249 per item.
+Available for prepaid orders only. NOT available for COD orders.
+For items priced under Rs.5000: Rs.199 per item is deducted as reverse shipping and processing fee.
+For items priced Rs.5000 or more: Rs.249 per item is deducted as reverse shipping and processing fee.
+Deductions are per item, not per order.
 Processed within 5 to 7 business days after QC approval.
-
-### Refund — Cash on Delivery (COD) Orders
-The Rs.100 COD charge is an upfront handling fee and is non-refundable under any circumstances.
-COD order refunds are issued ONLY as Lagorii Wallet store credits.
-No bank or UPI refunds are ever given for COD orders.
 
 ### Refund — Gift Card Orders
 Orders paid using a gift card are not eligible for refunds to the original payment method.
 
-### Order Cancellations
-Before dispatch: a 2% bank processing fee applies.
-After dispatch: a cancellation fee of Rs.199 applies.
-COD orders: the Rs.100 COD charge is non-refundable.
+### Order Cancellations — Prepaid Orders
+Before dispatch: a 2% bank processing fee is deducted and the remaining amount is refunded.
+After dispatch: Rs.199 is deducted as cancellation fee and the remaining amount is refunded.
 International order cancellations are subject to a 5% cancellation fee.
 
+### Order Cancellations — COD Orders
+The Rs.100 COD charge is an extra charge applied on all COD orders at the time of order placement.
+Before dispatch: the order is cancelled and the Rs.100 COD charge is refunded in full.
+After dispatch: the Rs.100 COD charge becomes non-refundable. The customer may refuse or deny delivery of the parcel if they no longer want it — no additional fee applies for refusing delivery.
+
 ### General Return Conditions
-Return charges are applied per item, not per order.
+Return and deduction charges are applied per item, not per order.
 Shipping charges and payment gateway fees are non-refundable.
 Refunds are processed only after QC approval.
 Rejected returns will not be refunded.
@@ -81,8 +91,10 @@ All orders are packed securely in sealed discreet packaging.
 Order ships together when all items are ready.
 
 ### COD Shipping
-A flat Rs.100 per COD order is charged as processing and handling fee. This is non-refundable.
-COD refunds are only issued as Lagorii Wallet credits, not bank or UPI.
+A flat Rs.100 extra charge is applied per COD order at the time of order placement.
+This charge is refundable only if the order is cancelled before dispatch.
+If cancelled after dispatch, the Rs.100 charge is non-refundable.
+COD order refunds (for returns) are issued ONLY as Lagorii Wallet credits — bank or UPI refunds are not available for COD orders.
 Wallet credits are added within 48 hours of successful QC and do not expire.
 
 ### International Shipping and Customs
