@@ -20,7 +20,7 @@ HEADER = """
 <div style="background:linear-gradient(135deg,#ff6b9d,#c44dff);
             padding:22px 28px;border-radius:14px;margin-bottom:10px;
             color:white;font-family:'Segoe UI',sans-serif;">
-  <h1 style='margin:0;font-size:1.7rem;'>🛍️ Lagorii Kids — Support Chat</h1>
+  <h1 style='margin:0;font-size:1.7rem;'>🛍️ D2C Chatbot— Support Chat</h1>
   <p style='margin:5px 0 0;font-size:.95rem;opacity:.93;'>
     Hi! I'm <strong>Lara</strong> — ask me about
     <strong>returns · refunds · shipping · cancellations · orders</strong>.
