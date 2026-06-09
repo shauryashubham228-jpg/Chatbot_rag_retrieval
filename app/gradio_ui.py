@@ -46,8 +46,7 @@ def chat_fn(user_msg: str, history: list, session_id: str):
     result = run_agent(user_msg, session_id)
     badge  = INTENT_BADGES.get(result["intent"], "")
     reply  = result["answer"] + (f"\n\n`{badge}`" if badge else "")
-    history.append({"role": "user",      "content": user_msg})
-    history.append({"role": "assistant", "content": reply})
+    history.append((user_msg, reply))
     return "", history, session_id
 
 
@@ -65,7 +64,6 @@ def build_demo() -> gr.Blocks:
 
         gr.HTML(HEADER)
         chatbot = gr.Chatbot(
-            type="messages",
             height=460,
             bubble_full_width=False,
             show_copy_button=True,
