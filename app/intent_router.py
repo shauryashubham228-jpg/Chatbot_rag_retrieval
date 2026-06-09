@@ -27,13 +27,30 @@ RAG_INTENTS = {
 
 _ROUTER_PROMPT = ChatPromptTemplate.from_messages([
     ("system", """You are an intent classifier for Lagorii Kids customer support.
-Classify the customer message into EXACTLY ONE of these labels:
-returns_refunds    – returning products, refund amounts, wallet credits, QC
-shipping_delivery  – shipping costs, delivery timelines, tracking, damaged packages
-cancellations      – cancelling an order, cancellation fees
-order_support      – wrong item, unpacking video, COD charges, gift cards
-escalate_human     – angry/frustrated customer, wants manager or human agent
+Classify the customer message into EXACTLY ONE label.
+
+KEY DISTINCTION — read carefully:
+- cancellations  = the customer wants to STOP an order that has NOT been received yet
+  (cancel before dispatch, cancel after dispatch, cancellation fees, the 2% bank
+  processing fee, the Rs.199 after-dispatch fee, COD Rs.100 charge on cancellation,
+  international 5% cancellation fee). Trigger words: "cancel", "stop my order",
+  "don't want it anymore", "cancel before it ships".
+- returns_refunds = the customer ALREADY RECEIVED the item and wants to send it back
+  or get money back (return window of 3 days, QC approval, wallet refund Rs.99,
+  bank/UPI refund Rs.199 or Rs.249, non-returnable items, how refunds are paid).
+  Trigger words: "return", "refund", "send it back", "money back", "deduction".
+
+Labels:
+returns_refunds    – returning a delivered product, refund amounts/methods, wallet credits, QC, non-returnable items
+shipping_delivery  – shipping costs, delivery timelines, tracking, damaged/tampered packages
+cancellations      – cancelling/stopping an order, cancellation fees (before vs after dispatch)
+order_support      – wrong item received, unpacking video, COD handling charge, gift card orders
+escalate_human     – angry/frustrated customer, wants a manager or human agent
 out_of_scope       – greetings, small talk, unrelated questions
+
+If the message mentions BOTH cancelling and refund, choose cancellations only if the
+order has not been received yet; otherwise choose returns_refunds.
+
 Reply with ONLY the label. No explanation. No punctuation."""),
     ("human", "Customer message: {message}"),
 ])
