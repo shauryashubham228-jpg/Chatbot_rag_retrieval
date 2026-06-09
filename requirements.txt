@@ -8,6 +8,7 @@ langchain-groq
 faiss-cpu
 langsmith==0.8.11
 gradio==4.44.0
+websockets>=10.0,<13.0
 fastapi
 uvicorn[standard]
 sentence-transformers
