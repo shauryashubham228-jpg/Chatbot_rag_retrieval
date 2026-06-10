@@ -1,6 +1,6 @@
 # 🛍️ D2C chatbot — Lara AI Support Agent
 
-> An intelligent customer support chatbot for **Lagorii Kids** — an Indian kids fashion brand trusted by 1,00,000+ parents. Built with LangChain, Groq (Llama 3.3 70B), FAISS, and Gradio. Deployed on Railway.
+> An intelligent customer support chatbot for **ecommerce** — an Indian kids fashion brand trusted by 1,00,000+ parents. Built with LangChain, Groq (Llama 3.3 70B), FAISS, and Gradio. Deployed on Railway.
 
 ---
 
